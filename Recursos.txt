@@ -1,0 +1,24 @@
+Verde Matcha (#A4C639): Color protagonista que evoca el matcha, color de acento y detalles.
+Blanco Suave (#F8F8F4): Para fondo.
+Beige Natural (#fffcf6): Secciones.
+Marrón Claro (#CDC0B1): Sección encabezado.
+Gris Suave (#2e2e2e): Pie de página o tipografía.
+FAMILIA TIPOGRÁFICA "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+SUBCLASE HOVER EN EL NAV: sobre el elemento de menu se ve un borde con el borde izquiero superior y el bordoderecho inferior redondeado del mismo color de la letra
+SUB CLASE HOVER DE LOS VINCULOS DE LA SECCION ABOUT US, pasan a tener un color de dondo en negro y la letra en verde.
+
+CONTENIDOS DE LA SECCION ABOUTusb
+¿Por qué Elegir Matcha City?
+Calidad Premium: Matcha 100% orgánico y cosechado de manera sostenible. "Nuestro matcha es 100% orgánico, cultivado en las tierras más fértiles de Japón. Garantizamos un sabor auténtico y la mejor textura en cada sorbo."
+
+Variedad Exclusiva: Desde matcha ceremonial hasta mezclas únicas. "Desde el matcha ceremonial de la más alta pureza hasta mezclas innovadoras para tus smoothies y lattes, tenemos algo para todos los gustos."
+
+Compromiso con el Planeta: Envases ecológicos y procesos responsables. "En Matcha City, creemos en cuidar el medio ambiente. Usamos envases reciclables y apoyamos prácticas agrícolas sostenibles."
+
+Envíos Rápidos: Directo a tu puerta en tiempo récord. "Tu matcha favorito llegará a tu puerta en tiempo récord y en perfecto estado. Enviamos a toda la región con un sistema confiable y seguro."
+
+#DescubrelaDiferencia
+Descubre el Verdadero Sabor del Matcha
+
+

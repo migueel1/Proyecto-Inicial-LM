@@ -1,176 +1,242 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3e5f5;
-    color: #4a148c;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia;
+    background-color: white;
 }
-
-header {
-    background-color: #6a1b9a;
-    color: white;
-    padding: 1rem 2rem;
+h1, h2, h3{
+    color: #9513ff;
     text-align: center;
 }
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #7b1fa2;
+h4{
+    font-size: 30px;
 }
-
-nav a {
-    color: white;
+.principal .encabezado{
+    text-align: center;
+    background-color: #f1e0ff;
+}
+.principal .encabezado .logo img{
+    width: 20%;
+    border-radius: 50%;
+    padding: 20px;
+}
+.principal .encabezado .menu{
+    padding: 10px;
+    background-color: #6c3483;
+}
+.principal .encabezado .menu li{
+    list-style: none;
+    display: inline;
+    margin: 25px;
+    color: #CDC0B1;
+}
+.principal .encabezado .menu li a{
     text-decoration: none;
-    font-weight: bold;
+    color: #F8F8F4;
+    font-size: 20px;  
+}
+.principal .contenido .primero{
+    margin-left: 34%;
+}
+.principal .footer{
+    background-color: #f1e0ff;
+    text-align: center;
+}
+.principal .footer .verde{
+    color: #A4C639;
+    font-size:larger;
+}
+.principal .footer .pie{
+    background-color: #f1e0ff;
+    text-align: center;
+}
+.principal .footer .pie img{
+    width: 5%;
+}
+.principal .footer .pie .redes img{
+    border-radius: 50%;
+    margin: 3px;
+}
+.principal .contenido a{
+    padding: 10px;
+    color: #F8F8F4;
+    border: none;
+    background-color: #6c3483;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 43%;
 }
 
-nav a:hover {
+
+.principal .contenido a .primero{
+    margin-left: 33%;
+}
+.principal .footer .unete input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.principal .footer .unete a{
+    padding: 10px;
+    color: #F8F8F4;
+    border: none;
+    background-color: #A4C639;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-decoration: none;
+    margin-left: 4px;
+}
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #6c3483;
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #ead1ff;
+}
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.formulario form .datos{
+    position: relative;
+    border-bottom: 2px solid #ead1ff;
+    margin: 30px 0;
+}
+.datos input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.datos label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 16px;
+    color: #adadad;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+.datos span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #6c3483;
+    transition: .5s;
+}
+
+.datos input:focus ~ label,
+.datos input:focus ~ label{
+    top: -5px;
+    color: #6c3483;
+}
+
+.datos input:focus ~ span::before,
+.datos input:focus ~ span::before{
+    width: 100%;
+}
+.recordar{
+    margin: -5px 0 20px 5px;	
+    color: purple;
+    cursor: pointer;
+}
+.recordar:hover{
     text-decoration: underline;
 }
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #6c3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: purple;
+    transition: .5s;
+}
+.registro{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
 
+.registro a{
+    text-decoration: none;
+    color: purple;
+}
+
+.registro a:hover{
+    text-decoration: underline;
+}
 .productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .producto {
-    background-color: white;
-    border: 1px solid #d1c4e9;
+    background-color: #cc8aff;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.producto:hover {
-    transform: scale(1.05);
+    text-align: center;
+    border: 2px black solid;
 }
 
 .producto img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 200px;
+    height: 100px;
 }
 
-.producto h3 {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    background-color: #7e57c2;
-    color: white;
-    margin: 0;
+.precio {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.producto p {
-    padding: 1rem;
-    font-size: 1rem;
-}
-
-#contacto {
-    padding: 2rem;
-    background-color: #ede7f6;
-    border-top: 2px solid #d1c4e9;
-}
-
-#contacto h2 {
-    color: #4a148c;
-}
-
-#contacto form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-#contacto label {
-    font-weight: bold;
-}
-
-#contacto input,
-#contacto textarea {
-    padding: 0.5rem;
-    border: 1px solid #d1c4e9;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contacto button {
-    padding: 0.5rem;
-    background-color: #7b1fa2;
-    color: white;
+button {
+    background-color: #363636;
     border: none;
+    color: white;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
 }
 
-#contacto button:hover {
-    background-color: #6a1b9a;
+button:hover {
+    background-color: #cc5500;
 }
-
-#reseñas {
-    padding: 2rem;
-    background-color: #f3e5f5;
-    border-top: 2px solid #d1c4e9;
-}
-
-#reseñas h2 {
-    color: #4a148c;
-}
-
-#reseñas .reseña {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: white;
-    border: 1px solid #d1c4e9;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#reseñas form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-#reseñas label {
-    font-weight: bold;
-}
-
-#reseñas input,
-#reseñas textarea {
-    padding: 0.5rem;
-    border: 1px solid #d1c4e9;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#reseñas button {
-    padding: 0.5rem;
-    background-color: #7b1fa2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#reseñas button:hover {
-    background-color: #6a1b9a;
-}
-
-footer {
-    background-color: #4a148c;
-    color: white;
+.principal .aboutUs{
+    background-color: #f1e0ff;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    border-radius: 10px;
+    border: 3px solid #6c3483;
+    padding-bottom: 40px;
+}
+.principal .aboutUs p{
+    text-align: justify;
+    font-size: 20px;
+    color: #6c3483;
+    padding-left: 10%;
+    padding-right: 10%;
 }
